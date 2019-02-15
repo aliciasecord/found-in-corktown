@@ -1,0 +1,60 @@
+#midground {
+  position: absolute;
+  margin-top: 50px;
+}
+#foreground {
+  position: absolute;
+  margin-top: 100px;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 54px;
+}
+#panel2 {
+  margin-top: 200px;
+}
+
+#panel3, #panel5 {
+  width: 101vw;
+  position: relative;
+  margin-left: -51vw;
+  margin-top: 50px;
+  padding: 100px 0px;
+  left: 49%;
+}
+.fa {
+  padding: 10px;
+  font-size: 24px;
+  width: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.clock {
+  margin: 25px;
+}
+#panel4 {
+  position: relative;
+  padding: 100px 0px;
+}
+#mc_embed_signup{
+  clear:left;
+  width:100%;
+}
+label {
+  width: 150px;
+}
+input {
+  width: 50%;
+}
+#mc-embedded-subscribe {
+  width: 150px;
+  margin-left: 51%;
+}
+.font-small {
+  font-size: 12px;
+}

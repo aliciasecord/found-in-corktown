@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Found In Corktown</title>
+
+    <!-- bootstrap css and js -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+
+    <!-- flipclock css -->
+    <link rel="stylesheet" href="css/flipclock.css">
+
+
+
+    <!-- mapbox css -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/mapbox.css">
+
+
+
+    <!-- icon library for social media links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <!--custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body class="bg-success text-white">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/ProfilePhoto.png" height="30px" width="30px"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Contest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Challenges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container-fixed">
+        <div id="map"></div>
+        <div id="midground">
+          <img src="imgs/Ping.png" height="1000px" />
+        </div>
+        <div class="container">
+          <div id="foreground" class="text-center">
+            <h1 class="text-success">Found in Corktown</h1>
+            <h3 class="text-dark">March 2019</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-md-2 d-none d-sm-block"></div>
+                <div class="col-sm-3 col-md-2 d-none d-sm-block"><img src="imgs/Grid1.jpg" class="img-fluid border border-dark" /></div>
+                <div class="col-sm-3 col-md-2 d-none d-sm-block"><img src="imgs/Grid2.jpg" class="img-fluid border border-dark" /></div>
+                <div class="col-sm-3 col-md-2 d-none d-sm-block"><img src="imgs/Grid3.jpg" class="img-fluid border border-dark" /></div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-md-2 d-none d-sm-block"></div>
+                <div class="col-sm-3 col-md-2 d-none d-sm-block"></div>
+                <div class="col-sm-3 col-md-2 d-none d-sm-block"><img src="imgs/Grid4.jpg" class="img-fluid border border-dark" /></div>
+                <div class="col-sm-3 col-md-2 d-none d-md-block"><img src="imgs/Grid5.jpg" class="img-fluid border border-dark" /></div>
+                <div class="col-sm-3 col-md-2"><img src="imgs/Grid6.jpg" class="img-fluid border border-dark" /></div>
+              </div>
+            </div>
+            <div class="container" id="panel2">
+              <div class="text-left">
+                <h2>a digital treasure hunt in Detroit's oldest neighborhood</h2>
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <h3>What</h3>
+                    <p>In Detroit’s Corktown neighborhood, on social media, maybe in your attic</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h3>When</h3>
+                    <p>Throughout the month of March, especially during the St. Patrick’s Day Parade on March 10.</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h3>How</h3>
+                    <p>Play along on social media or submit entries on this website<br />
+                      <a href="#" class="text-dark">More details</a>
+                    </p>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h3>Why</h3>
+                    <p>This is a student endeavor to collect digital archives for a long-term project related to Ford’s presence on the Corktown neighborhood.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fixed bg-white text-dark" id="panel3">
+              <div class="text-left container">
+                <h2>scavenger hunt challenges</h2>
+                <div class="clock"></div>
+                <p>Check back starting at midnight on March 1 for the list of challenges. A list will be announced here on the website, on Twitter, Instagram,  and Facebook. Weekly challenges will also be announced. If you’re playing on social media, remember to use #foundincorktown so your subission will be counted.</p>
+                <p class="text-center">
+                  <a href="https://facebook.com/foundincorktown" class="fa fa-facebook bg-success text-white"></a>
+                  <a href="https://twitter.com/foundincorktown" class="fa fa-twitter bg-success text-white"></a>
+                  <a href="https://instagram.com/foundincorktown" class="fa fa-instagram bg-success text-white"></a>
+                  <a href="https://pinterest.com/foundincorktown" class="fa fa-pinterest bg-success text-white"></a>
+                  <a href="https://tumblr.com/foundincorktown" class="fa fa-tumblr bg-success text-white"></a>
+                  <a href="mailto:foundincorktown@gmail.com" class="fa fa-envelope bg-success text-white"></a>
+                </p>
+              </div>
+            </div>
+            <div class="text-left container" id="panel4">
+              <div class="container">
+                <h2>sign up for updates</h2>
+                <p>Sign up for the mailing list to get an update in your inbox when the contest launches.</p>
+                <!-- Begin Mailchimp Signup Form -->
+                  <div id="mc_embed_signup">
+                  <form action="https://github.us20.list-manage.com/subscribe/post?u=e7ea8692bf8d7acc1d88e45e6&amp;id=c8fd72b558" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll">
+                  <div class="mc-field-group">
+                  	<label for="mce-NAME">Name </label>
+                  	<input type="text" value="" name="NAME" class="" id="mce-NAME">
+                  </div>
+                  <div class="mc-field-group">
+                  	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                  </label>
+                  	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  </div>
+                  	<div id="mce-responses" class="clear">
+                  		<div class="response" id="mce-error-response" style="display:none"></div>
+                  		<div class="response" id="mce-success-response" style="display:none"></div>
+                  	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e7ea8692bf8d7acc1d88e45e6_c8fd72b558" tabindex="-1" value=""></div>
+                      <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-dark text-light"></div>
+                      </div>
+                  </form>
+                  </div>
+                  <!--End mc_embed_signup-->
+                </div>
+            </div>
+            <div class="container-fixed bg-white text-dark" id="panel3">
+              <div class="text-left container">
+                <div class="row">
+                  <div class="col">
+                    <h2>about the adventure</h2>
+                    <p>This is a digital scavenger hunt to engage the residents, businesses, and visitors of Corktown in uncovering the stories and histories of Detroit's oldest neighborhood. Submitted entries will be used to inform an ongoing series of sponsored courses at the College for Creative Studies.</p>
+                    <p>Enter the contest by using <a href="https://twitter.com/search?q=%23foundincorktown" class="text-success">#foundincorktown</a> for photos and videos on Twitter or Instagram or by uploading photos or video to this site with your name and email address. <a href="#" class="text-success">Click here to sign up for updates.</a> By submitting your photos, videos, and stories, you agree to their use by the students of the College for Creative Studies in Detroit.</p>
+                  </div>
+                </div>
+                <div class="container bg-light">
+                  <div class="row"><p></p></div>
+                  <div class="row">
+                    <div class="col">
+                      <p>
+                        <span class="font-weight-bold">Ford + College for Creative Studies + Corktown</span> <br/>
+                        This project is part of an ongoing series of sponsored studio courses which aim to:
+                        <ul>
+                          <li>Visualize the impact of the Ford's presence on the city and the future of mobility</li>
+                          <li>Research Corktown’s history, residents, and ethnography</li>
+                          <li>Explore geographic and architectural landmarks</li>
+                          <li>Collaborate with Ford to create futuristic, visual experiences to document Ford’s Corktown Campus</li>
+                        </ul>
+                        <p>Have something to say about Corktown? Drop us a line at <a href="mailto:CorktownStudio@CollegeforCreativeStudies.edu" class="text-success">CorktownStudio@CollegeforCreativeStudies.edu</a>.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="page-footer font-small bg-success">
+              <div class="container-fluid text-center">
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                    © 2019 Copyright: <a href="https://aliciasecord.com/" class="text-white"> Alicia Secord</a>
+                </div>
+                <!-- Copyright -->
+              </div>
+            </footer>
+          </div>
+        </div>
+    </div>
+
+    <!-- mailchimp js -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+
+    <!-- flipclock js -->
+    <script src="js/flipclock.js"></script>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+    <!-- mapbox js -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <script src="js/mapbox.js"></script>
+
+    <script>
+
+    var clock;
+
+    $(document).ready(function() {
+    	// grab the current date
+    	var currentDate = new Date();
+
+    	// set March 1 date
+    	var futureDate  = new Date('March 1, 2019 00:00:01');
+
+    	// calculate difference in seconds
+    	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+    	clock = $('.clock').FlipClock(diff, {
+    		clockFace: 'DailyCounter',
+    		countdown: true,
+    		showSeconds: true
+    		});
+
+
+      (function($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+
+        fnames[2]='NAME';
+        ftypes[2]='text';
+        fnames[0]='EMAIL';
+        ftypes[0]='email';}(jQuery));
+
+      var $mcj = jQuery.noConflict(true);
+
+      });
+    </script>
+  </body>
+</html>
