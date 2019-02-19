@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- google analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134758976-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134758976-1');
+    </script>
+
+
     <meta charset="utf-8">
     <title>Found In Corktown</title>
+
+
+
+    <!-- Facebook and Twitter data -->
+    <meta property="og:url" content="http://foundincorktown.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Found In Corktown" />
+    <meta property="og:description" content="A digital treasure hunt in Detroit's oldest neigbhorhood: This is a student endeavor to collect digital archives for a long-term project related to Ford’s presence on the Corktown neighborhood." />
+    <meta property="og:image" content="http://aliciasecord.github.io/found-in-corktown/imgs/Grid3.jpg" />
+
+    <meta name="twitter:card" content="summary"></meta>
+    <meta name="twitter:site" content="@foundincorktown"></meta>
+    <meta name="twitter:creator" content="@alicia_secord"></meta>
+
+
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="imgs/ProfilePhoto.png">
+
+
 
     <!-- bootstrap css and js -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
@@ -36,7 +67,7 @@
   </head>
   <body class="bg-success text-white">
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#top">
           <img src="imgs/ProfilePhoto.png" height="30px" width="30px"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,27 +76,22 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-success" href="#">Home</a>
+              <a class="nav-link text-success" href="#contest">Contest</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="#">Contest</a>
+              <a class="nav-link text-success" href="#challenges">Challenges</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="#">Challenges</a>
+              <a class="nav-link text-success" href="#signup">Sign up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-success" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-success" href="#">Sign up</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-success" href="#">Contact</a>
+              <a class="nav-link text-success" href="#about">About</a>
             </li>
           </ul>
         </div>
     </nav>
     <div class="container-fixed">
+        <a name="top"></a>
         <div id="map"></div>
         <div id="midground">
           <img src="imgs/Ping.png" height="1000px" />
@@ -99,35 +125,41 @@
                 <div class="col-sm-3 col-md-2"><img src="imgs/Grid6.jpg" class="img-fluid border border-dark" /></div>
               </div>
             </div>
+            <a name="contest"></a>
             <div class="container" id="panel2">
               <div class="text-left">
                 <h2>a digital treasure hunt in Detroit's oldest neighborhood</h2>
                 <div class="row">
                   <div class="col-sm-6 col-lg-3">
-                    <h3>What</h3>
+                    <h4>Where</h4>
                     <p>In Detroit’s Corktown neighborhood, on social media, maybe in your attic</p>
                   </div>
                   <div class="col-sm-6 col-lg-3">
-                    <h3>When</h3>
+                    <h4>When</h4>
                     <p>Throughout the month of March, especially during the St. Patrick’s Day Parade on March 10.</p>
                   </div>
                   <div class="col-sm-6 col-lg-3">
-                    <h3>How</h3>
+                    <h4>How</h4>
                     <p>Play along on social media or submit entries on this website<br />
                       <a href="#" class="text-dark">More details</a>
                     </p>
                   </div>
                   <div class="col-sm-6 col-lg-3">
-                    <h3>Why</h3>
+                    <h4>Why</h4>
                     <p>This is a student endeavor to collect digital archives for a long-term project related to Ford’s presence on the Corktown neighborhood.</p>
                   </div>
                 </div>
               </div>
             </div>
+            <a name="challenges"></a>
             <div class="container-fixed bg-white text-dark" id="panel3">
               <div class="text-left container">
                 <h2>scavenger hunt challenges</h2>
-                <div class="clock"></div>
+                <div class="justify-content-center row">
+                  <div class="col">
+                    <div class="clock"></div>
+                  </div>
+                </div>
                 <p>Check back starting at midnight on March 1 for the list of challenges. A list will be announced here on the website, on Twitter, Instagram,  and Facebook. Weekly challenges will also be announced. If you’re playing on social media, remember to use #foundincorktown so your subission will be counted.</p>
                 <p class="text-center">
                   <a href="https://facebook.com/foundincorktown" class="fa fa-facebook bg-success text-white"></a>
@@ -139,6 +171,7 @@
                 </p>
               </div>
             </div>
+            <a name="signup"></a>
             <div class="text-left container" id="panel4">
               <div class="container">
                 <h2>sign up for updates</h2>
@@ -168,6 +201,7 @@
                   <!--End mc_embed_signup-->
                 </div>
             </div>
+            <a name="about"></a>
             <div class="container-fixed bg-white text-dark" id="panel3">
               <div class="text-left container">
                 <div class="row">
@@ -175,6 +209,7 @@
                     <h2>about the adventure</h2>
                     <p>This is a digital scavenger hunt to engage the residents, businesses, and visitors of Corktown in uncovering the stories and histories of Detroit's oldest neighborhood. Submitted entries will be used to inform an ongoing series of sponsored courses at the College for Creative Studies.</p>
                     <p>Enter the contest by using <a href="https://twitter.com/search?q=%23foundincorktown" class="text-success">#foundincorktown</a> for photos and videos on Twitter or Instagram or by uploading photos or video to this site with your name and email address. <a href="#" class="text-success">Click here to sign up for updates.</a> By submitting your photos, videos, and stories, you agree to their use by the students of the College for Creative Studies in Detroit.</p>
+                    <p>For questions, email <a class="text-success" href="mailto:foundincorktown@gmail.com">foundincorktown@gmail.com</a>.</p>
                   </div>
                 </div>
                 <div class="container bg-light">
@@ -190,7 +225,7 @@
                           <li>Explore geographic and architectural landmarks</li>
                           <li>Collaborate with Ford to create futuristic, visual experiences to document Ford’s Corktown Campus</li>
                         </ul>
-                        <p>Have something to say about Corktown? Drop us a line at <a href="mailto:CorktownStudio@CollegeforCreativeStudies.edu" class="text-success">CorktownStudio@CollegeforCreativeStudies.edu</a>.</p>
+                        <p>To contact the class about other projects or concerns, drop us a line at <a href="mailto:CorktownStudio@CollegeforCreativeStudies.edu" class="text-success">CorktownStudio@CollegeforCreativeStudies.edu</a>.</p>
                     </div>
                   </div>
                 </div>
