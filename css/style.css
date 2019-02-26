@@ -29,6 +29,7 @@ h2 {
   padding: 10px;
   font-size: 24px;
   width: 50px;
+  margin: 10px 20px;
   text-decoration: none;
   border-radius: 50%;
 }
@@ -42,6 +43,11 @@ h2 {
   position: relative;
   padding: 100px 0px;
 }
+
+#midground {
+  width: 50vw;
+}
+
 #mc_embed_signup{
   clear:left;
   width:100%;
