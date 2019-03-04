@@ -45,8 +45,8 @@
 
 
 
-    <!-- flipclock css -->
-    <link rel="stylesheet" href="css/flipclock.css">
+    <!-- mailchimp css -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
 
 
@@ -186,8 +186,22 @@
                       <li>Your favorite piece of art in a Corktown hotel</li>
                       <li>Your favorite cocktail at a Corktown bar</li>
                       <li>Your favorite dish at a Corktown restaurant</li>
-                      <li>The location of a youth robotics club</li>
+                      <li>A youth enrichment program</li>
                     </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h5 class="font-weight-bold">Point system</h5>
+                    <p>5 points for a current photo submission +1 for every year that has passed
+                    </p>
+                    <p>10 points for a current video submission +3 for every year that has passed
+                    </p>
+                    <p>5 points for stories from the past 5 year, 10 points for stories from 6-10 years ago, 20 points for story from 11-30 years ago, 30 points for story from more than 30 years ago</p>
+
+                    <p>Photo/video must be taken by the person who is submitting it. Submitter must have direct knowledge of stories being shared.<p>
+
+                    <p class="font-weight-bold">Points are tallied daily and the person with the most points on March 31 will win.</p>
                   </div>
                 </div>
 
@@ -242,20 +256,6 @@
                     <p>For questions, email <a class="text-success" href="mailto:foundincorktown@gmail.com">foundincorktown@gmail.com</a>.</p>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <p><span class="font-weight-bold">Point system</span></p>
-                    <p>5 points for a current photo submission +1 for every year that has passed
-                    </p>
-                    <p>10 points for a current video submission +3 for every year that has passed
-                    </p>
-                    <p>5 points for stories from the past 5 year, 10 points for stories from 6-10 years ago, 20 points for story from 11-30 years ago, 30 points for story from more than 30 years ago</p>
-
-                    <p>Photo/video must be taken by the person who is submitting it. Submitter must have direct knowledge of stories being shared.<p>
-
-                    <p class="font-weight-bold">Points are tallied daily and the person with the most points on March 31 will win.</p>
-                  </div>
-                </div>
                 <div class="container bg-light">
                   <div class="row">
                     <p></p>
@@ -292,9 +292,6 @@
     <!-- mailchimp js -->
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 
-    <!-- flipclock js -->
-    <script src="js/flipclock.js"></script>
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
     <!-- mapbox js -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
@@ -305,21 +302,6 @@
     var clock;
 
     $(document).ready(function() {
-    	// grab the current date
-    	var currentDate = new Date();
-
-    	// set March 1 date
-    	var futureDate  = new Date('March 1, 2019 00:00:01');
-
-    	// calculate difference in seconds
-    	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-    	clock = $('.clock').FlipClock(diff, {
-    		clockFace: 'DailyCounter',
-    		countdown: true,
-    		showSeconds: false
-    		});
-
 
       (function($) {
       window.fnames = new Array();
